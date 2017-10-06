@@ -1,0 +1,135 @@
+{
+  "contract_name": "Backend",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "total",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "delegateContract",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "var1",
+          "type": "uint256"
+        },
+        {
+          "name": "var2",
+          "type": "uint256"
+        }
+      ],
+      "name": "add",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_newDelegate",
+          "type": "address"
+        }
+      ],
+      "name": "changeDelegate",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "previousDelegates",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "oldAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "newAddress",
+          "type": "address"
+        }
+      ],
+      "name": "DelegateChanged",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b5b5b5b6103268061001e6000396000f300606060405263ffffffff60e060020a6000350416632ddbd13a811461004d5780633c2b07251461006f578063771602f71461009b578063e38296e4146100b3578063fbd2dbad146100e3575bfe5b341561005557fe5b61005d610112565b60408051918252519081900360200190f35b341561007757fe5b61007f610118565b60408051600160a060020a039092168252519081900360200190f35b34156100a357fe5b6100b1600435602435610127565b005b34156100bb57fe5b6100cf600160a060020a03600435166101b7565b604080519115158252519081900360200190f35b34156100eb57fe5b61007f60043561027d565b60408051600160a060020a039092168252519081900360200190f35b60025481565b600054600160a060020a031681565b6000805460408051606060020a736164642875696e743235362c75696e74323536290281528151908190036014018120602091820194909452815163ffffffff60e060020a95869004908116909502815260048101879052602481018690529151600160a060020a0390931693926044808401938290030181866102c65a03f415156101af57fe5b5050505b5050565b600080548190600160a060020a0384811691161461027257600180548082016101e083826102af565b916000526020600020900160005b600080548354600160a060020a036101009490940a8481021990911691841602179092558154600160a060020a031981168783169081179093556040805191909216808252602082019390935281519294507fef9fc1dee6010109e6e3b21e51d44028e246dbad8a5a71ea192a30b19e1f457f93508290030190a160019150610277565b600091505b50919050565b600180548290811061028b57fe5b906000526020600020900160005b915054906101000a9004600160a060020a031681565b8154818355818115116102d3576000838152602090206102d39181019083016102d9565b5b505050565b6102f791905b808211156102f357600081556001016102df565b5090565b905600a165627a7a723058201a9d7a6c0020a87b60f86f8f487818677f75e0cf2fcc815ccea308139c94e39c0029",
+  "networks": {
+    "4": {
+      "events": {
+        "0xef9fc1dee6010109e6e3b21e51d44028e246dbad8a5a71ea192a30b19e1f457f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "oldAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "newAddress",
+              "type": "address"
+            }
+          ],
+          "name": "DelegateChanged",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x85006c8cd56b034de8bce93a86a8ae80201c7d24",
+      "updated_at": 1507286362540
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1507286362540
+}
