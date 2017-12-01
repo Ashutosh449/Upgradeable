@@ -9,6 +9,7 @@ contract Backend {
 
   uint256 public total;
 
+
   event DelegateChanged(address oldAddress, address newAddress);
 
   function Backend() {
@@ -16,7 +17,9 @@ contract Backend {
   }
 
   function changeDelegate(address _newDelegate) returns (bool) {
+
     if (_newDelegate != delegateContract) {
+
           previousDelegates.push(delegateContract);
           var oldDelegate = delegateContract;
           delegateContract = _newDelegate;
@@ -27,8 +30,12 @@ contract Backend {
 
   }
 
-  function add(uint256 var1, uint256 var2) {
+  function delegateAdd(uint256 var1, uint256 var2) {
     delegateContract.delegatecall(bytes4(sha3("add(uint256,uint256)")), var1, var2);
+  }
+
+  function callAdd(uint256 var1, uint256 var2) {
+    delegateContract.call(bytes4(sha3("add(uint256,uint256)")), var1, var2);
   }
 
 }
